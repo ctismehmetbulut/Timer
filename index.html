@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.6.0.min.js"></script>
+    <title>Timer</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="./timerClass.js"></script>
+</head>
+<body>
+    <div id="main">
+        <form name="myform">
+            <div id="container">
+                <div id="inpContainer">
+                    <input type="number" id="hr" maxlength="2" value="" class="boxes" disabled autocomplete="off" onkeypress="return event.charCode >= 48" min="1">
+                    <input type="number" id="min" maxlength="3" value="" class="boxes" disabled autocomplete="off" onkeypress="return event.charCode >= 48" min="1">
+                    <input type="number" id="sec" maxlength="2" value="" class="boxes" disabled autocomplete="off" onkeypress="return event.charCode >= 48" min="1">
+                </div>
+                <button type="button" id="edit">Edit</button>
+                <div id="btnContainer">
+                    <button type="button" id="startPause">Start</button>
+                    <button type="button" id="reset" disabled>Reset</button>
+                </div>
+                
+            </div>
+        </form>
+        <!-- Display the countdown timer in an element -->
+        <div id="displayContainer">
+            <div id="countWrapper">
+                <p id="CountDown"></p>
+            </div>
+            <div id="stream">
+                <div id="filledPart"></div>
+            </div>
+            <div id="info">
+                <input type="text" class="boxes" name="" id="initDur">
+                <p id="initialCountDown">00:00:03</p>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
