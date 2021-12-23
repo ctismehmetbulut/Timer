@@ -1,3 +1,3 @@
-# BasicTimerApp.
+# Timer
 
-https://ctismehmetbulut.github.io/BasicTimerApp./
+https://ctismehmetbulut.github.io/Timer/
